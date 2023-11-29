@@ -1,0 +1,486 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  transition: all ease-in 1s;
+}
+
+.btn {
+  border-radius: 10px;
+  border: 1px solid var(--Primary-Color, #0f2800);
+  background: #fff;
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.hero-section {
+  background-position: center;
+  display: flex;
+  height: 463px;
+  justify-content: start;
+  align-items: center;
+  background-image: url(/asstes/hero/Imo-state-government-house.png);
+  color: #fff;
+  font-style: normal;
+
+  background-size: cover;
+  .hero-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    .hero-body-top {
+      .hero-title {
+        font-family: Open Sans;
+        font-size: 48px;
+
+        font-weight: 600;
+        line-height: 64px;
+        letter-spacing: 0.96px;
+      }
+      .hero-sub-text {
+        max-width: 600px;
+        font-size: 16px;
+        margin-top: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+      }
+    }
+
+    .hero-cta {
+      max-width: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      justify-content: center;
+      align-items: center;
+      .hero-cta-top {
+        text-transform: uppercase;
+        display: inline-flex;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        gap: 24px;
+      }
+
+      .hero-cta-btn {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.28px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.28px;
+      }
+    }
+  }
+}
+
+.about-section {
+  margin: 50px 0;
+
+  .about-section-content {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: start;
+    .about-section-title {
+      color: var(--Primary-Color, #0f2800);
+
+      font-family: Open Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .about-section-body {
+      color: #000;
+
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .about-section-footer {
+    }
+  }
+  .about-section-right {
+    width: 470px;
+    height: 513px;
+    position: relative;
+    background-position: center 0px;
+    background-size: cover;
+    background-image: url(/asstes/about/d6bc12a05523a1e49812b8d885522afd.jpeg);
+
+    .about-img-title {
+      position: absolute;
+      bottom: -20px;
+      left: -40px;
+      width: 407px;
+      padding: 9px 20px;
+      background: #307e00;
+      border-radius: 70px;
+      height: 110px;
+      color: #fff;
+      font-family: Open Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      text-align: center;
+      line-height: 24px; /* 120% */
+      letter-spacing: 0.4px;
+    }
+  }
+}
+
+.e-servises-section {
+  margin: 40px 0px;
+  .e-servises-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .e-servises-section-title {
+      color: var(--Primary-Color, #0f2800);
+
+      font-family: Open Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .e-servises-section-filter {
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+      padding: 9px 30px;
+
+      .e-servises-section-filter-drp-dwn {
+        width: 73px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+  .e-servises-section-body {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    row-gap: 40px;
+    margin-top: 23px;
+    .e-servises-section-card {
+      /* width: calc(25% - 20px); */
+      border: 1px solid #c3c3c3;
+      background: #fffefe;
+      /* width: 282px;
+      height: 207px; */
+      flex-shrink: 0;
+      width: 282px;
+      height: 207px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      .e-servises-section-card-img {
+        width: 100px;
+        height: 100px;
+      }
+      .e-servises-section-card-title {
+        color: #000;
+
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+      }
+    }
+  }
+}
+
+.solutions-section {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  margin: 40px 0px;
+  .solutions-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .solutions-section-title {
+      color: var(--Primary-Color, #0f2800);
+
+      font-family: Open Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .solutions-section-filter {
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+      padding: 9px 30px;
+
+      .solutions-section-filter-drp-dwn {
+        width: 73px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+  .solutions-section-body {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    row-gap: 40px;
+    margin-top: 23px;
+    .solutions-section-card {
+      border-radius: 10px;
+      border: 1px solid #c3c3c3;
+      background: #fffefe;
+      color: #000;
+      flex-shrink: 0;
+      padding: 22px 18px;
+      width: 282px;
+      height: 229px;
+      gap: 6px;
+      display: flex;
+      justify-content: center;
+
+      flex-direction: column;
+      text-align: left;
+
+      .solutions-section-card-img {
+        width: 160.382px;
+        height: 42.722px;
+      }
+
+      .solutions-section-card-title {
+        color: var(--Acent-Color, #307e00);
+        text-align: justify;
+
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+      }
+
+      .solutions-section-card-body {
+        color: #000;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.programmes-section {
+  padding: 40px 0;
+  margin: 40px 0px;
+  .programmes-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .programmes-section-title {
+      color: var(--Primary-Color, #0f2800);
+
+      font-family: Open Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .programmes-section-filter {
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+      padding: 9px 30px;
+
+      .programmes-section-filter-drp-dwn {
+        width: 73px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+  .programmes-section-body {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    row-gap: 40px;
+    margin-top: 23px;
+
+    .programmes-section-card {
+      border-radius: 10px;
+      border: 1px solid #c3c3c3;
+      background: #fffefe;
+      color: #000;
+      flex-shrink: 0;
+      width: 282px;
+      height: 292px;
+      gap: 6px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      text-align: left;
+      padding: 5px;
+      .programmes-section-card-img {
+        width: 100%;
+        height: 152px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .programmes-section-card-title {
+        color: var(--Acent-Color, #307e00);
+        text-align: justify;
+        margin-bottom: 0;
+        margin-left: 10px;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+      }
+
+      .programmes-section-card-body {
+        color: #000;
+        font-family: "Poppins";
+        margin-left: 10px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.faq {
+  margin: 60px 0;
+  padding: 34px 0;
+  background-color: #f5f5f5;
+  min-height: 107px;
+  .faq-header {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .faq-title {
+      color: var(--Black, #307e00);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .faq-sub-header {
+      color: #282828;
+      text-align: center;
+
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  .faq-body {
+    padding: 0 20px;
+    .faq-item {
+      padding: 34px 21px;
+      border-radius: 10px;
+      display: flex;
+      gap: 13px;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      background-color: #fff;
+
+      .faq-item-header {
+        /* Heading 5 */
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .faq-item-icon {
+        cursor: pointer;
+      }
+      .faq-item-answer {
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+
+        & {
+          display: none;
+        }
+
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+}
