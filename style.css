@@ -2,7 +2,7 @@
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
-  transition: all ease-in 1s;
+  transition: all ease-in 0.2s;
 }
 
 .btn {
@@ -89,7 +89,7 @@
 
 .about-section {
   margin: 50px 0;
-
+  padding: 0 20px;
   .about-section-content {
     display: flex;
     gap: 18px;
@@ -125,7 +125,7 @@
     }
   }
   .about-section-right {
-    width: 470px;
+    width: 100%;
     height: 513px;
     position: relative;
     background-position: center 0px;
@@ -133,10 +133,12 @@
     background-image: url(/asstes/about/d6bc12a05523a1e49812b8d885522afd.jpeg);
 
     .about-img-title {
+      bottom: -30px;
+      right: 50%;
+      transform: translateX(50%);
       position: absolute;
-      bottom: -20px;
-      left: -40px;
-      width: 407px;
+
+      width: 100%;
       padding: 9px 20px;
       background: #307e00;
       border-radius: 70px;
@@ -151,18 +153,36 @@
       letter-spacing: 0.4px;
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    .about-section-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 470px;
+      height: 513px;
+      .about-img-title {
+        bottom: -30px;
+        left: -40px;
+        width: 407px;
+      }
+    }
+  }
 }
 
 .e-servises-section {
   margin: 40px 0px;
   .e-servises-section-header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     .e-servises-section-title {
+      margin-bottom: 20px;
       color: var(--Primary-Color, #0f2800);
-
-      font-family: Open Sans;
+      text-align: center;
+      font-family: "Open Sans";
       font-size: 32px;
       font-style: normal;
       font-weight: 700;
@@ -185,21 +205,19 @@
       }
     }
   }
+
   .e-servises-section-body {
     display: flex;
     flex-wrap: wrap;
-
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     row-gap: 40px;
     margin-top: 23px;
     .e-servises-section-card {
-      /* width: calc(25% - 20px); */
       border: 1px solid #c3c3c3;
       background: #fffefe;
-      /* width: 282px;
-      height: 207px; */
+
       flex-shrink: 0;
       width: 282px;
       height: 207px;
@@ -215,7 +233,7 @@
       }
       .e-servises-section-card-title {
         color: #000;
-
+        margin-bottom: 20px;
         font-family: Open Sans;
         font-size: 20px;
         font-style: normal;
@@ -223,6 +241,25 @@
         line-height: 24px;
         letter-spacing: 0.4px;
       }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .e-servises-section-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .e-servises-section-title {
+        text-align: left;
+      }
+    }
+    .e-servises-section-body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }
@@ -233,9 +270,12 @@
   margin: 40px 0px;
   .solutions-section-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     .solutions-section-title {
+      text-align: center;
       color: var(--Primary-Color, #0f2800);
 
       font-family: Open Sans;
@@ -264,12 +304,12 @@
   .solutions-section-body {
     display: flex;
     flex-wrap: wrap;
-
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     row-gap: 40px;
     margin-top: 23px;
+
     .solutions-section-card {
       border-radius: 10px;
       border: 1px solid #c3c3c3;
@@ -292,6 +332,7 @@
       }
 
       .solutions-section-card-title {
+        margin-bottom: 20px;
         color: var(--Acent-Color, #307e00);
         text-align: justify;
 
@@ -313,6 +354,25 @@
       }
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    .solutions-section-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .solutions-section-title {
+        text-align: left;
+      }
+    }
+    .solutions-section-body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 .programmes-section {
@@ -320,11 +380,14 @@
   margin: 40px 0px;
   .programmes-section-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     .programmes-section-title {
-      color: var(--Primary-Color, #0f2800);
+      margin-bottom: 20px;
 
+      color: var(--Primary-Color, #0f2800);
+      text-align: center;
       font-family: Open Sans;
       font-size: 32px;
       font-style: normal;
@@ -351,8 +414,8 @@
   .programmes-section-body {
     display: flex;
     flex-wrap: wrap;
-
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     row-gap: 40px;
@@ -404,6 +467,25 @@
       }
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    .programmes-section-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .programmes-section-title {
+        text-align: left;
+      }
+    }
+    .programmes-section-body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 .faq {
@@ -442,6 +524,9 @@
   }
 
   .faq-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 0 20px;
     .faq-item {
       padding: 34px 21px;
