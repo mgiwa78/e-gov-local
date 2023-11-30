@@ -127,7 +127,7 @@
 .hero-section {
   background-position: center;
   display: flex;
-
+  padding: 70px 0;
   justify-content: start;
   align-items: center;
   background-image: url(/asstes/hero/Imo-state-government-house.png);
@@ -145,7 +145,7 @@
         font-size: 28px;
 
         font-weight: 600;
-        line-height: 24px;
+        line-height: 30px;
         letter-spacing: 0.96px;
       }
       .hero-sub-text {
