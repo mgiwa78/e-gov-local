@@ -253,6 +253,7 @@
       }
     }
     .header-socials {
+      margin-top: 12px;
       display: flex;
       padding: 0;
       gap: 10px;
@@ -275,6 +276,9 @@
         .logo-text {
           text-align: left;
         }
+      }
+      .header-socials {
+        margin-top: 0px;
       }
     }
   }
