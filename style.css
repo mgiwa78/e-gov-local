@@ -21,6 +21,10 @@
     color: #fff;
   }
 }
+
+.container {
+  max-width: 1224px;
+}
 .chat-container {
   padding: 0 20px;
   position: absolute;
@@ -629,7 +633,7 @@
     .e-servises-section-body {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
     }
   }
@@ -731,6 +735,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 20px;
       align-items: center;
 
       .solutions-section-title {
@@ -740,7 +745,8 @@
     .solutions-section-body {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 24px;
       align-items: center;
     }
   }
@@ -855,8 +861,9 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      gap: 24px;
     }
   }
 }
@@ -898,9 +905,19 @@
 
   .faq-body {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
+    justify-content: center;
     padding: 0 20px;
+
+    .faq-body-right,
+    .faq-body-left {
+      display: flex;
+      gap: 24px;
+      flex-direction: column;
+      width: 100%;
+    }
     .faq-item {
       padding: 34px 21px;
       border-radius: 10px;
@@ -944,7 +961,17 @@
 
   @media only screen and (min-width: 768px) {
     .faq-body {
+      justify-content: center;
       flex-direction: row;
+      align-items: flex-start;
+      gap: 86px;
+
+      .faq-body-left {
+        width: calc(50% - 50px);
+      }
+      .faq-body-right {
+        width: calc(50% - 50px);
+      }
     }
   }
 }
@@ -1003,7 +1030,7 @@
 
       .news-card {
         width: 100%;
-        max-width: 400px;
+        max-width: 384px;
         /* min-width: 400px; */
         border-radius: 15px;
         background: #fff;
@@ -1160,9 +1187,10 @@
         align-items: start;
         flex-wrap: nowrap;
         width: 100%;
-        gap: 40px;
+        gap: 24px;
+
         .news-card {
-          width: 400px;
+          width: 384px;
           font-family: Open Sans;
           font-size: 48px;
         }
@@ -1176,7 +1204,7 @@
           align-items: end;
           gap: 32px;
           .news-card-mini {
-            width: 420px;
+            width: 380px;
             height: max-content;
             .news-card-mini-img {
               width: 126px;
