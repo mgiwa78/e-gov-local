@@ -1126,6 +1126,7 @@
             background-position: center;
             background-size: cover;
             width: 100%;
+            min-width: 120px;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
             height: auto;
