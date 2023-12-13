@@ -364,7 +364,7 @@
         letter-spacing: 0.96px;
       }
       .hero-sub-text {
-        max-width: 600px;
+        max-width: 500px;
         font-size: 16px;
         margin-top: 18px;
         font-weight: 600;
@@ -747,10 +747,11 @@
         }
         .programmes-card-desc-cta,
         .btn {
-          width: max-content;
+          /* width: 130px; */
+          padding: 10px;
           gap: 10px;
           font-size: 15px;
-          height: 20px;
+          height: 32px;
         }
       }
     }
@@ -850,6 +851,7 @@
 
     .gallery-section-title {
       margin-bottom: 20px;
+      max-width: 452px;
 
       color: var(--Primary-Color, #0f2800);
       text-align: center;
@@ -1054,7 +1056,7 @@
     align-items: center;
     .news-section-title {
       margin-bottom: 20px;
-
+      max-width: 452px;
       color: var(--Primary-Color, #0f2800);
       text-align: center;
       font-family: Open Sans;
@@ -1250,6 +1252,9 @@
   @media only screen and (min-width: 1468px) {
     .news-section-header {
       flex-direction: row;
+      .news-section-title {
+        text-align: left;
+      }
     }
     .news-section-body {
       padding: 0;
