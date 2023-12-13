@@ -691,7 +691,7 @@
       /* min-width: 400px; */
       border-radius: 15px;
       background: #fff;
-      height: 560px;
+      height: 510px;
 
       box-shadow: -2px 4px 34px 0px rgba(5, 14, 0, 0.18);
 
@@ -883,7 +883,7 @@
 
       .gallery-section-item-title {
         position: absolute;
-        bottom: -128px;
+        bottom: 0;
 
         .gallery-section-item-title-m {
           font-size: 20px;
@@ -898,7 +898,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
+        width: 350px;
         background: #fff;
         color: #000;
         height: 84px;
@@ -921,12 +921,17 @@
 
       .gallery-section-title {
         text-align: left;
+        bottom: -128px;
       }
     }
     .gallery-section-body {
       flex-direction: row;
       .gallery-section-item {
         width: 342.057px;
+
+        .gallery-section-item-title {
+          bottom: -128px;
+        }
       }
     }
   }
