@@ -579,7 +579,7 @@
     .e-servises-section-card {
       border: 1px solid #c3c3c3;
       background: #fffefe;
-
+      gap: 20px;
       flex-shrink: 0;
       width: 282px;
       height: 207px;
