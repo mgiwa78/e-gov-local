@@ -262,9 +262,8 @@
       display: flex;
       justify-content: center;
       gap: 10px;
-      flex-direction: column;
-      align-items: center;
-
+      align-items: flex-start;
+      text-align: left;
       .logo-img {
         width: 60.769px;
         height: 60px;
@@ -273,7 +272,7 @@
         background-size: cover;
       }
       .logo-text {
-        text-align: center;
+        text-align: left;
         max-width: 328px;
         color: #fff;
         font-size: 20px;
@@ -865,6 +864,10 @@
 .gallery-section {
   background-color: #d9d9d9;
   padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .gallery-section-header {
     padding: 0 20px;
     display: flex;
@@ -873,6 +876,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+
     .gallery-section-title {
       margin-bottom: 20px;
       max-width: 452px;
@@ -886,19 +890,42 @@
       line-height: 40px;
     }
   }
+  .gallery-section-body::-webkit-scrollbar {
+    width: 1em;
+  }
 
+  .gallery-section-body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery-section-body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
   .gallery-section-body {
-    display: flex;
-    flex-direction: column;
+    /* max-width: 342.057px; */
+    overflow: hidden;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 23.59px;
-    flex-wrap: wrap;
+
+    .gallery-container {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      gap: 23.59px;
+      overflow-x: scroll;
+
+      scroll-snap-type: x mandatory;
+      height: 393.169px;
+      width: max-content;
+    }
 
     .gallery-section-item {
+      scroll-snap-align: start;
       position: relative;
       overflow: hidden;
-      width: 350px;
+      width: 350px !important;
       max-width: 342.057px;
       height: 393.169px;
       background-position: center;
@@ -1342,6 +1369,15 @@
       font-size: 18px;
       font-weight: 700;
       text-align: left;
+    }
+    .logo-sub {
+      color: rgba(255, 229, 0, 0.88);
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.32px;
     }
   }
 
