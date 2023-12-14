@@ -269,6 +269,7 @@
       text-align: left;
       .logo-img {
         width: 60.769px;
+        min-width: 60.769px;
         height: 60px;
         background-image: url(/asstes/ef63a5eade3333be2230b79fa4055dbe.png);
         background-position: center;
@@ -278,7 +279,7 @@
         text-align: left;
         max-width: 328px;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -666,14 +667,14 @@
   margin: 40px 0px;
   .programmes-section-header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     .programmes-section-title {
       margin-bottom: 20px;
 
       color: var(--Primary-Color, #0f2800);
-      text-align: center;
+      text-align: left;
       font-family: Open Sans;
       font-size: 28px;
       font-style: normal;
