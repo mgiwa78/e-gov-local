@@ -873,6 +873,7 @@
   .gallery-section-header {
     padding: 0 20px;
     display: flex;
+    margin-bottom: 24px;
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
@@ -1014,9 +1015,10 @@
   .news-section-header {
     padding: 0 20px;
     display: flex;
+    margin-bottom: 24px;
     justify-content: space-between;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     .news-section-title {
       margin-bottom: 20px;
       max-width: 452px;
@@ -1148,7 +1150,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 42px;
         flex-direction: row;
         flex-wrap: wrap;
         .news-card-mini {
@@ -1265,7 +1267,7 @@
         .news-section-right-top {
           justify-content: end;
           align-items: end;
-          gap: 32px;
+          gap: 42px;
           .news-card-mini {
             width: 380px;
             height: max-content;
