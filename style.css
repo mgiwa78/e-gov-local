@@ -873,7 +873,6 @@
   .gallery-section-header {
     padding: 0 20px;
     display: flex;
-    margin-bottom: 32px;
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
@@ -1048,7 +1047,6 @@
   }
   .news-section-body {
     padding: 0 20px;
-    margin-top: 30px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -1227,6 +1225,7 @@
   }
   @media only screen and (min-width: 758px) {
     .news-section-header {
+      padding: 0;
       justify-content: space-between;
       flex-direction: row;
       .news-section-title {
